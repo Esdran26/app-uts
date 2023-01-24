@@ -1,3 +1,4 @@
+import 'package:app_uts/src/form/form_new.dart';
 import 'package:app_uts/src/global/variables.dart';
 import 'package:flutter/material.dart';
 
@@ -69,17 +70,16 @@ class InitPage extends StatelessWidget {
                     Card(
                       elevation: 4.0,
                       child: ListTile(
-                        title: Text('Suscribirse',
-                            style: fontNormal),
+                        title: Text('Suscribirse', style: fontNormal),
                         leading: Icon(
                           Icons.person,
                           color: primaryColor,
                         ),
                         trailing: const Icon(Icons.keyboard_arrow_right),
-                        // onTap: () => Navigator.push(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //         builder: (context) => const LoginPage())),
+                        onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const FormNews())),
                       ),
                     ),
                   ],

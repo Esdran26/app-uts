@@ -1,3 +1,4 @@
+import 'package:app_uts/src/global/variables.dart';
 import 'package:flutter/material.dart';
 
 class MainListTitle extends StatefulWidget {
@@ -17,11 +18,11 @@ class MainListTitleState extends State<MainListTitle> {
         alignment: Alignment.centerLeft,
         child: Text(
           widget.title,
-          style: const TextStyle(
+          style: TextStyle(
               fontWeight: FontWeight.w700,
               fontFamily: 'NunitoSans',
               fontSize: 30.0,
-              color: Color.fromRGBO(45, 52, 54, 1.0)),
+              color: primaryColor),
         ),
       ),
     );
