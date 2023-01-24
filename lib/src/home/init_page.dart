@@ -17,7 +17,7 @@ class InitPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'images/logo-splash.jpg',
+                'images/logosplash.jpg',
                 height: 150.0,
               ),
               const SizedBox(
@@ -69,7 +69,7 @@ class InitPage extends StatelessWidget {
                     Card(
                       elevation: 4.0,
                       child: ListTile(
-                        title: Text('Recibe noticias de las UTS',
+                        title: Text('Suscribirse',
                             style: fontNormal),
                         leading: Icon(
                           Icons.person,

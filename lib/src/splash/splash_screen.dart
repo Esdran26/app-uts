@@ -28,9 +28,12 @@ class SplashScreenState extends State<SplashScreen> {
         children: [
           Expanded(
             child: Center(
-              child: Image.asset(
-                'images/logo.jpg',
-                height: 100.0,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(50.0),
+                child: Image.asset(
+                  'images/logo.png',
+                  height: 100.0,
+                ),
               ),
             ),
           ),
@@ -41,8 +44,8 @@ class SplashScreenState extends State<SplashScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'images/logo-splash.png',
-                    height: 24.0,
+                    'images/logosplash.jpg',
+                    height: 50.0,
                   ),
                 ],
               ),

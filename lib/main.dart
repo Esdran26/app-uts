@@ -15,8 +15,11 @@ class MyApp extends StatelessWidget {
       title: 'Cuental',
       theme: ThemeData(
           primaryColor: primaryColor,
-          colorScheme: ColorScheme.fromSwatch()
-              .copyWith(secondary: Colors.greenAccent)),
+          colorScheme:
+              ColorScheme.fromSwatch().copyWith(secondary: Colors.greenAccent),
+          inputDecorationTheme: InputDecorationTheme(
+            labelStyle: TextStyle(color: primaryColor),
+          )),
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {'/': (context) => const SplashScreen()},
